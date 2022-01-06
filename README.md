@@ -1,2 +1,2 @@
 # GeekyLikesV-2
-Full Stack GeekyLikes Application
+GeekyLikes React Application
