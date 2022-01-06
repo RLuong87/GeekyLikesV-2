@@ -10,7 +10,7 @@ const FaButton = (props) => {
     >
       {props.disabled ? (
         <FontAwesomeIcon
-          icon={["fas", "spinner"]}
+          icon={["fas", "fan"]}
           spin
           style={{ fontSize: 20, margin: "0 auto" }}
         />

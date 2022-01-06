@@ -6,6 +6,7 @@ import InlineInputContainer from "../common/InlineInputContainer";
 import Form from "../common/Form";
 import Input from "../common/Input";
 import Button from "../common/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Articles = () => {
   const { articles, loading, setQuery } = useContext(NewsContext);
@@ -24,7 +25,7 @@ const Articles = () => {
   };
 
   return (
-    <div style={{ width: "100%", justifyContent: "center" }}>
+    <div style={{ width: "100%", justifyContent: "center"}}>
       <Form onSubmit={handleSubmit}>
         <InlineInputContainer>
           <Input
@@ -32,6 +33,7 @@ const Articles = () => {
             placeHolder="Search"
             onChange={(e) => setQ(e.target.value)}
           />
+          <FontAwesomeIcon icon={["fas", "search"]} />
           <Button>Search</Button>
         </InlineInputContainer>
       </Form>

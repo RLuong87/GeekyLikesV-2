@@ -26,16 +26,16 @@ const NewUserForm = (props) => {
       <InlineInputContainer>
         <Input
           id="fname"
-          placeholder="First Name"
+          placeholder="Full Name"
           onChange={handleChange}
           value={query.fname}
         />
-        <Input
+        {/* <Input
           id="lname"
           placeholder="Last Name"
           onChange={handleChange}
           value={query.lname}
-        />
+        /> */}
       </InlineInputContainer>
       <InlineInputContainer>
         <Input
